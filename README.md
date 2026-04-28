@@ -51,7 +51,7 @@ warped = cv2.warpPerspective(images[i], T @ H_list[i], (pano_w, pano_h))
 - Translation (T): Prevents images from being cut off by shifting negative coordinates (caused by homography) into the positive canvas area.
 - warpPerspective: Applies the final accumulated transformation matrix to project each image onto the panorama.
 
-### 6. Interactive PTZ (Pan-Tilt-Zoom) Viewer
+### 6. Interactive PTZ (Pan-Tilt-Zoom) Viewer (Only-using MOUSE)
 A custom feature that allows users to explore the high-resolution panorama interactively.
 ```
 view = pano[start_y : start_y + cur_h, start_x : start_x + cur_w] # Slicing/Cropping
